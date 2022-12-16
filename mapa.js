@@ -37,7 +37,7 @@ function popup(feature,layer){
 var myBaseIcon = L.icon({
     iconUrl: 'Leaflet.Legend-master/examples/marker/ic_account_balance_grey600_48dp.png',
     iconSize: [22, 22],
-    iconAnchor: [22, 94],
+    iconAnchor: [1, 1],
     popupAnchor: [-3, -76],
     shadowUrl: 'my-icon-shadow.png',
     shadowSize: [68, 95],
