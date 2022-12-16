@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
+     <link rel="stylesheet" type="text/css" href="mapa.css">
+     <link rel="stylesheet" type="text/css" href="Leaflet-MiniMap-master/dist/Control.MiniMap.min.css">
+     <link rel="stylesheet" type="text/css" href="Leaflet.Legend-master/src/leaflet.legend.css">
+     
+    
+     <title>Negociadores FFEE</title>
+     <h1>Departamento Fuerzas Especiales</h1>
+     <h2>Intervenciones de la División Negociación e Inteligencia Táctica</h2>
+
+     <select name="select-location" id="select-location">
+        <option value="-1">Bases del Departamento Fuerzas Especiales</option>   
+        <option value="-34.680629, -58.466203">Base Ana Díaz 5455</option>
+        <option value="-34.6603842,-58.4341021">Base Pedernera 3405</option>     
+        <option value="-34.6570694,-58.4373564">Base Itaquí 2612</option>
+    </select>
+
+</head>
+<body>
+
+    <div id="map"></div>
+    
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+
+    <script src="Leaflet-MiniMap-master/dist/Control.MiniMap.min.js"></script>
+    <script src="Leaflet.Legend-master/src/leaflet.legend.js"></script>
+    <script src="datos_sig/intervenciones_negociadores.js"></script>
+    <script src="mapa.js"></script>
+
+</body>
+</html>
